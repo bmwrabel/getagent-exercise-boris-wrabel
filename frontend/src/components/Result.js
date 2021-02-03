@@ -4,6 +4,8 @@ import Transaction from './Transaction';
 
 function Result(props) 
 {
+    // User experience could be improved by adding a See Property Price details button 
+    // The property details which are inside the Accordion.Toggle could be encapsulated into their own component 
     const property = props.property;
     return (
         <Container style={{marginTop: '10px', marginBottom: '10px'}}>

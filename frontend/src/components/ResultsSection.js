@@ -4,6 +4,8 @@ import { Card } from 'react-bootstrap'
 
 function ResultsSection(props) 
 {
+  // The No result div could definitely be improved.
+  // Another thing that I'd here would be a loading state for when the results are being fetched.  
   let cardSubtitle = <Card.Subtitle className="mb-2 text-muted"> 
     Results: {props.propertyData ? props.propertyData.length : null}.
     {props.propertyData && props.propertyData.length !== 0 ? ' Click on an entry to see its price history.' : null }
